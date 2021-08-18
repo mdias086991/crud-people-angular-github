@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div *ngIf="showForm == false; else templateForm">
+        <app-button color="success" label="Novo Usuário" (click)="openForm()"></app-button>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Usuario do GitHub</th>
+                <th scope="col">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of user">
+                <th scope="row">{{user.id}}</th>
+                <td>
+                    {{user.nome}}
+                </td>
+                <td>{{user.sobrenome}}</td>
+                <td>{{user.usuario_github}}</td>
+                <td>
+                    <app-button color="danger" label="Apagar" (click)="deleteUser(user.id)"></app-button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <ng-template #templateForm>
+        <app-button color="secondary" label="Cancelar" (click)="closeForm()"></app-button>
+        <app-user-form></app-user-form>
+    </ng-template>
+    
+</div>

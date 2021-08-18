@@ -1,0 +1,16 @@
+<div class="container mt-5 mb-5">
+    <h2>Quem já esta aqui</h2>
+    <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-5" *ngFor="let userGit of usersGitHub">
+                <div class="card" style="width: 100%; height: 100%;">
+                    <img src="{{userGit.avatar_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{userGit.name}}</h5>
+                        <p class="card-text">Bio - {{userGit.bio || "Nenhuma Bio informada"}}</p>
+                        <p class="card-text">Repositorios publicos - {{userGit.public_repos || "Nenhum repositorio publico informado"}}</p>
+                        <a href="{{userGit.html_url}}" target="_blank" class="btn btn-primary">Visite {{userGit.name}}</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

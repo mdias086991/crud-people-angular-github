@@ -1,0 +1,77 @@
+<h2>Formulario de cadastro</h2>
+<form class="well form-horizontal" #form="ngForm" [formGroup]="cadastroForm" (submit)="onSubmit()">
+  <fieldset class="mb-3">
+    <div class="row">
+      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+         <label class="control-label">Nome</label>
+         <div class="inputGroupContainer">
+            <div class="input-group">
+              <input id="fullName" name="Nome" formControlName="nome" placeholder="Nome completo" class="form-control" required="true" value="" type="text">
+             </div>
+         </div>
+      </div>
+      <div class="form-group col-lg-6 col-md-6 col-sm-12">
+       <label class="control-label">Sobrenome</label>
+       <div class="inputGroupContainer">
+          <div class="input-group">
+            <input id="fullName" name="fullName" formControlName="sobrenome" placeholder="Sobrenome" class="form-control" required="true" value="" type="text">
+           </div>
+       </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+         <label class="control-label">Cidade</label>
+         <div class="inputGroupContainer">
+            <div class="input-group">
+              <input id="city" name="city" placeholder="Cidade" formControlName="cidade" class="form-control" required="true" value="" type="text">
+             </div>
+         </div>
+      </div>
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+       <label class="control-label">Endereço</label>
+       <div class="inputGroupContainer">
+          <div class="input-group">
+            <input id="postcode" name="postcode" formControlName="endereco" placeholder="Endereço" class="form-control" required="true" value="" type="text">
+           </div>
+       </div>
+    </div>
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+         <label class="control-label">CEP</label>
+         <div class="inputGroupContainer">
+            <div class="input-group">
+              <input id="postcode" name="postcode" formControlName="CEP" placeholder="CEP" class="form-control" required="true" value="" type="text">
+             </div>
+         </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+         <label class="control-label">Email</label>
+         <div class="inputGroupContainer">
+            <div class="input-group">
+              <input id="email" name="email" formControlName="email" placeholder="Email" class="form-control" required="true" value="" type="text">
+             </div>
+         </div>
+      </div>
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+       <label class="control-label">Usúario GitHub</label>
+       <div class="inputGroupContainer">
+          <div class="input-group">
+            <input id="text" name="email" formControlName="usuario_github" placeholder="Usuario GitHub" class="form-control" required="true" value="" type="text">
+           </div>
+       </div>
+    </div>
+      <div class="form-group col-lg-4 col-md-4 col-sm-12">
+         <label class="control-label">Número de telefone</label>
+         <div class="inputGroupContainer">
+            <div class="input-group">
+              <input id="phoneNumber" formControlName="telefone" name="phoneNumber" placeholder="Telefone" class="form-control" required="true" value="" type="text">
+             </div>
+         </div>
+      </div>
+    </div>
+  </fieldset>
+  <app-button color="success" label="Salvar" type="submit"></app-button>
+</form>

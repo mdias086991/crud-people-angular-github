@@ -10,28 +10,6 @@
       "usuario_github": "mdias086991",
       "endereco": "Estrada do coco km 8,5",
       "id": 1
-    },
-    {
-      "nome": "Thauan ",
-      "sobrenome": "Almeida",
-      "email": "Thauan Almeida",
-      "CEP": "42854215",
-      "telefone": "71992252762",
-      "cidade": "Salvador",
-      "usuario_github": "Thauan",
-      "endereco": "Mussurunga ",
-      "id": 2
-    },
-    {
-      "nome": "Daniela",
-      "sobrenome": "macedo",
-      "email": "suporte@mouts.info",
-      "CEP": "49037-240",
-      "telefone": "79988538469",
-      "cidade": "Aracaju",
-      "usuario_github": "recieire",
-      "endereco": "Rua Francisco Rabelo Leite Neto",
-      "id": 3
     }
   ]
 }
